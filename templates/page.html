@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Page de Data Camp</title>
+
     <link rel="stylesheet" href="static/css/page.css"> 
-    <link rel="stylesheet" type="text/css" href="présentation.css"> 
+    <link rel="stylesheet" type="text/css" href="présentation.css">
+    
 </head>
 <body>
     <header>
@@ -13,7 +15,7 @@
         </div>
     </header>
     <div class="title">
-        <h1>Data Camp</h1>
+        <h1>Eye Cancer image classifier</h1>
     </div>
     
     <!-- Barre de navigation en haut -->
@@ -25,29 +27,41 @@
 
     
 
-    <div id="presentation">
-        <p>L'importance du Dépistage Précoce du Cancer des Yeux <br>
+    <!-- Barre de navigation en haut -->
+    <div class="navbar">
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </div>
 
-            Le cancer est une maladie redoutable qui peut affecter n'importe quelle partie du corps, y compris les yeux. Le cancer oculaire, bien que moins courant que d'autres types de cancer, peut avoir des conséquences graves s'il n'est pas détecté à un stade précoce. C'est pourquoi le dépistage du cancer des yeux revêt une importance capitale. Comprendre cette maladie, ses symptômes et les meilleures méthodes de dépistage est essentiel pour préserver notre vision et notre santé oculaire.
+    <div class="presentation">
+        <p>Cancer is a formidable disease that can affect any part of the body, including the eyes.
+
+            While eye cancer is less common than other types of cancer, it can have serious consequences if not detected at an early stage. 
             
-            Le cancer oculaire peut se développer dans différentes parties de l'œil, notamment la rétine, la cornée, le cristallin, la sclérotique, ou d'autres structures. Il peut être sous la forme de mélanome de l'œil, de rétinoblastome (cancer de la rétine le plus courant chez les enfants), ou d'autres types moins fréquents. Le cancer oculaire peut survenir à tout âge, mais il est plus fréquent chez les adultes âgés.
+            That's why screening for eye cancer is of paramount importance. Understanding this disease, its symptoms, and the best screening methods is essential for preserving our vision and ocular health.
+            <br><br>Why is early screening essential?
             
-            <br><br>Pourquoi est-il essentiel de se faire dépister ? 
+            <br>Early Detection: Eye cancer, like all cancers, is easier to treat when detected at an early stage. Early diagnosis can help save the patient's vision and life.
             
-            <br>Détection Précoce : Le cancer des yeux, comme tout cancer, est plus facile à traiter lorsqu'il est détecté à un stade précoce. Un diagnostic précoce peut aider à sauver la vision et la vie du patient.
+            <br>Prevention of Vision Loss: The symptoms of eye cancer can be subtle, making early detection even more crucial to prevent vision loss. Ignoring the symptoms can lead to severe impairment of vision.
             
-            <br>Prévention de la Perte de Vision : Les symptômes du cancer oculaire peuvent être subtiles, ce qui rend la détection précoce encore plus cruciale pour prévenir la perte de vision. Ignorer les symptômes peut entraîner une altération sévère de la vision.
-            
-            <br>Traitement Approprié : Un diagnostic précoce permet d'initier rapidement un traitement adapté, qu'il s'agisse de la chirurgie, de la radiothérapie, de la chimiothérapie, ou d'autres thérapies ciblées, selon le type et le stade du cancer.
+            <br>Appropriate Treatment: Early diagnosis allows for the prompt initiation of suitable treatment, whether it's surgery, radiotherapy, chemotherapy, or other targeted therapies, depending on the type and stage of cancer.
         </p>
     </div>
 
     <div id="image-upload">
-        <h2>Téléverser des images (.png uniquement)</h2>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept=".png" required>
+        <h2>Analyseur d'imagerie médicale de l'oeil (.png uniquement)</h2>
+        <form action="/uploads" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept=".png" required>
             <input type="submit" value="Téléverser">
         </form>
+
+        {% if uploaded_image %}
+        <h2>Downloaded image :</h2>
+        <!-- img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Image"-->
+        <img src="/uploads/Ananas.png" alt="image yeux">
+        {% endif %}
     </div>
 </body>
 </html>
