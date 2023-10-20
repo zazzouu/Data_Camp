@@ -59,8 +59,7 @@
 
         {% if uploaded_image %}
         <h2>Downloaded image :</h2>
-        <!-- img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Image"-->
-        <img src="/uploads/Ananas.png" alt="image yeux">
+        <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Image">
         {% endif %}
     </div>
 </body>
