@@ -42,3 +42,14 @@ flask run
 
 #pour linux, utiliser les commandes indiqués dans le site
 https://linuxize.com/post/how-to-install-flask-on-ubuntu-20-04/?utm_content=cmp-true
+
+  
+Autres bibliotèques utiles
+pip install Pillow
+pip install pandas
+pip install matplotlib
+
+pip install opencv-python
+pip install scikit-learn
+
+
