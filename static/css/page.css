@@ -6,7 +6,8 @@ body {
 }
 .banner img {
   width: 100%; /* Assure que l'image de la bannière prend la largeur complète de son conteneur */
-  /*height: 2.5cm;  Hauteur fixe de 2,5 cm */
+  height: 200px; 
+  overflow: hidden; /* Pour rogner le contenu dépassant les limites du conteneur */
 }
 h1 {
   font-size: 36px;
@@ -23,3 +24,26 @@ h1 {
 .presentation {
   text-align: justify;
 }
+
+
+/* Style de la barre de navigation horizontale avec Flexbox */
+.navbar {
+  display: flex;
+  background-color: #60aad4;
+  overflow: hidden;
+}
+
+/* Style des liens dans la barre (horizontale) avec flex: 1 pour une répartition égale */
+.navbar a {
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 14px 0; /* Ajustez le padding vertical pour centrer le texte */
+  text-decoration: none;
+}
+
+/* Espacement entre les liens (facultatif) */
+.navbar a + a {
+  margin-left: 10px; /* Ajustez cet espacement selon vos préférences */
+}
+
