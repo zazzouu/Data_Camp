@@ -1,3 +1,5 @@
 venv
 __pycache__
 eyes-dataset
+Matrice de confusion.png
+modele_cancer_des_yeux.h5

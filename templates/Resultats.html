@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat du traitement</title>
+</head>
+<body>
+    <h1>Image traitée</h1>
+    <h2>Résultat du traitement</h2>
+    <p>{{ resultat_treatment }}</p>
+
+    <h2>Image traitée :</h2>
+    <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Image">
+</body>
+</html>
+<form action="/delete_uploads" method="POST">
+    <input type="submit" name="delete" value="Revenir à la page principale">
+</form>
