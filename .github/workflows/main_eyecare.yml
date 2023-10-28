@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'EyeCare'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3273809BF075481986A87232709847CF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_64769E1554284DD5800173B2AB9363B7 }}
           package: .
