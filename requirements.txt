@@ -1,5 +1,5 @@
 absl-py==2.0.0
-altair==4.1.0
+altair @ file:///home/conda/feedstock_root/build_artifacts/altair_1693422388579/work
 anyio==4.0.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
@@ -46,7 +46,6 @@ google-auth-oauthlib==1.0.0
 google-pasta==0.2.0
 greenlet==3.0.1
 grpcio==1.59.0
-gunicorn==20.1.0
 h5py==3.10.0
 idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
 importlib-metadata==6.8.0
