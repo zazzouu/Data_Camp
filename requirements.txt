@@ -1,5 +1,4 @@
 absl-py==2.0.0
-altair @ file:///home/conda/feedstock_root/build_artifacts/altair_1693422388579/work
 anyio==4.0.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
